@@ -1,0 +1,55 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Tue Apr 23 11:11:40 2024
+| Host         : xxhh running 64-bit major release  (build 9200)
+| Command      : report_methodology -file hdmi_methodology_drc_routed.rpt -pb hdmi_methodology_drc_routed.pb -rpx hdmi_methodology_drc_routed.rpx
+| Design       : hdmi
+| Device       : xc7a35tfgg484-2
+| Speed File   : -2
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 1
++---------+----------+------------------------------+------------+
+| Rule    | Severity | Description                  | Violations |
++---------+----------+------------------------------+------------+
+| LUTAR-1 | Warning  | LUT drives async reset alert | 1          |
++---------+----------+------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell tft_colorbar_inst/tft_ctrl_inst/pix_data[16]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) tft_colorbar_inst/tft_ctrl_inst/cnt_h_reg[0]/CLR,
+tft_colorbar_inst/tft_ctrl_inst/cnt_h_reg[10]/CLR,
+tft_colorbar_inst/tft_ctrl_inst/cnt_h_reg[11]/CLR,
+tft_colorbar_inst/tft_ctrl_inst/cnt_h_reg[1]/CLR,
+tft_colorbar_inst/tft_ctrl_inst/cnt_h_reg[2]/CLR,
+tft_colorbar_inst/tft_ctrl_inst/cnt_h_reg[3]/CLR,
+tft_colorbar_inst/tft_ctrl_inst/cnt_h_reg[4]/CLR,
+tft_colorbar_inst/tft_ctrl_inst/cnt_h_reg[5]/CLR,
+tft_colorbar_inst/tft_ctrl_inst/cnt_h_reg[6]/CLR,
+tft_colorbar_inst/tft_ctrl_inst/cnt_h_reg[7]/CLR,
+tft_colorbar_inst/tft_ctrl_inst/cnt_h_reg[8]/CLR,
+tft_colorbar_inst/tft_ctrl_inst/cnt_h_reg[9]/CLR,
+tft_colorbar_inst/tft_ctrl_inst/cnt_v_reg[0]/CLR,
+tft_colorbar_inst/tft_ctrl_inst/cnt_v_reg[10]/CLR,
+tft_colorbar_inst/tft_ctrl_inst/cnt_v_reg[11]/CLR
+ (the first 15 of 27 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+

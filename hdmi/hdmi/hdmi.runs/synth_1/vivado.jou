@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr 23 10:52:23 2024
+# Process ID: 29964
+# Current directory: C:/Users/hp/Desktop/fpga20day/hdmi/hdmi/hdmi.runs/synth_1
+# Command line: vivado.exe -log hdmi.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi.tcl
+# Log file: C:/Users/hp/Desktop/fpga20day/hdmi/hdmi/hdmi.runs/synth_1/hdmi.vds
+# Journal file: C:/Users/hp/Desktop/fpga20day/hdmi/hdmi/hdmi.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source hdmi.tcl -notrace
